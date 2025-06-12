@@ -32,6 +32,14 @@ body, html {
   justify-content: flex-start; /* Change to flex-start */
   height: 100vh;               /* Ensure full height */
 } 
+.doc-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+  border: 2px solid #ccc;
+}
 
 .docinfo {
   flex: 1;                     /* Add this to fill available space */
@@ -46,6 +54,8 @@ body, html {
   margin-bottom: 0;            /* Remove margin if not needed */
 } 
 .doc-card {
+  display: flex;
+  align-items: flex-start;
   background: #fffcfc;
   color: #000;
   border: 1px solid #e0e0e0;
