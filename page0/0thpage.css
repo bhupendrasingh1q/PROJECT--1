@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('53d2a94a-c7db-4a9e-bcd7-ea153951966c_20250612_150554_0000.jpg'); 
+  background-image: url('53d2a94a-c7db-4a9e-bcd7-ea153951966c_20250612_150554_0000.jpg'); /* 🌄 Replace with actual image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,34 +13,40 @@ body {
 }
 
 .form-container {
-  background-color: #3d4665;
-  width: 700px;                 /* Wider form */
-  padding: 100px 60px;          /* Bigger padding */
+  background-color: rgba(61, 70, 101, 0.95); /* Semi-transparent dark background */
+  width: 700px;
+  padding: 80px 60px;
   border-radius: 20px;
-  
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;                    /* More gap between elements */
-  
+  gap: 35px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-.input-box {
+.input-box,
+.dropdown {
   width: 100%;
-  max-width: 500px;             /* Limit width for nice look */
+  max-width: 500px;
   padding: 20px;
-  font-size: 26px;
+  font-size: 22px;
   border: none;
-  border-radius: 15px;
+  border-radius: 14px;
   outline: none;
   text-align: center;
   background-color: white;
 }
 
+.dropdown {
+  appearance: none;
+  cursor: pointer;
+}
+
 .submit-btn {
-  width: 200px;
-  padding: 18px;
-  font-size: 22px;
+  width: 220px;
+  padding: 16px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   background-color: #1e62c6;
